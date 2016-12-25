@@ -20,8 +20,5 @@ def postgresql_syntax_checker(line, query=''):
     return output
 
 
-postgresql_syntax_checker('afs', 'select s* from t;')
-
-
 def load_ipython_extension(ipython):
     ipython.register_magic_function(postgresql_syntax_checker, 'cell', 'postgresql_syntax_checker')
